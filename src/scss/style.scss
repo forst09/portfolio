@@ -1,0 +1,22 @@
+/*common*/
+
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --red: #C55353;
+}
+
+body {
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    overflow-x: hidden;
+    color: var(--black);
+}
+
+svg {
+    display: inline-block;
+}
+
+/*end common*/
