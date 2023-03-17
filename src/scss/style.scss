@@ -13,10 +13,113 @@ body {
     font-weight: 400;
     overflow-x: hidden;
     color: var(--black);
+    font-size: 14px;
+    line-height: 17px;
 }
 
 svg {
     display: inline-block;
 }
 
+.wrapper {
+    padding: 0 10px;
+}
+
+.link {
+    text-decoration: underline;
+}
+
+.icon-link {
+    display: inline-flex;
+    align-items: center;
+}
+
+.icon-link__svg {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.icon-link__span {
+    text-transform: uppercase;
+}
+
 /*end common*/
+
+/*main*/
+.main {
+    padding-top: 100px;
+    position: relative;
+    overflow-x: hidden;
+
+    &::after {
+        content: '';
+        position: absolute;
+        right: -73px;
+        top: 0;
+        display: block;
+        width: 312px;
+        height: 312px;
+        border-radius: 50%;
+        background-color: var(--red);
+        z-index: -1;
+        filter: blur(250px);
+    }
+}
+
+.main__photo {
+    width: 128px;
+    height: 128px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 50%;
+    filter: grayscale(1);
+    margin: 0 auto;
+
+    img {
+        width: 100%;
+        transform: translateY(21px);
+    }
+}
+
+.title {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 28px;
+    text-align: center;
+}
+
+.main__list {
+    margin-top: 30px;
+}
+
+.main__list-item {
+    position: relative;
+    padding-left: 30px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 15px;
+        height: 15px;
+        left: 0;
+        top: 3px;
+        background-image: url('../img/icons/heart.svg');
+    }
+
+    &+& {
+        margin-top: 15px;
+    }
+}
+
+.main-btn__wrapper {
+    margin-top: 40px;
+    text-align: center;
+}
+
+/*end main*/
