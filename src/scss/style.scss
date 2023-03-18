@@ -181,6 +181,21 @@ svg {
 
 /*end mobile menu*/
 
+/*footer*/
+.footer {
+    margin-top: 50px;
+    padding-bottom: 35px;
+}
+
+.footer__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+/*end footer*/
+
 /*end common*/
 
 /*main*/
