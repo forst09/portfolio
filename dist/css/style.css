@@ -16,6 +16,10 @@ body {
   line-height: 17px;
 }
 
+section {
+  margin-top: 70px;
+}
+
 svg {
   display: inline-block;
 }
@@ -32,12 +36,17 @@ svg {
   display: inline-flex;
   align-items: center;
 }
+.icon-link:hover .icon-link__svg {
+  fill: var(--red);
+}
 
 .icon-link__svg {
   width: 40px;
   height: 40px;
   object-fit: cover;
   margin-right: 15px;
+  fill: var(--black);
+  transition: fill 0.3s ease-in-out;
 }
 
 .icon-link__span {
@@ -235,10 +244,6 @@ svg {
 
 /*end main*/
 /*start skills*/
-.skills {
-  margin-top: 70px;
-}
-
 .title-medium {
   margin-bottom: 40px;
   font-size: 19px;
@@ -263,3 +268,60 @@ svg {
 }
 
 /*end skills*/
+/*start works*/
+.works__item {
+  max-width: 300px;
+  margin: 0 auto;
+}
+.works__item + .works__item {
+  margin-top: 40px;
+}
+
+.works__img {
+  display: block;
+  width: 100%;
+  max-height: 351px;
+  overflow: hidden;
+}
+.works__img img {
+  width: 100%;
+  height: auto;
+}
+
+.works__info {
+  margin-top: 20px;
+}
+
+.works__title {
+  margin-bottom: 15px;
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 400;
+}
+
+.works__links {
+  margin-top: 10px;
+}
+
+.works__links-item {
+  display: block;
+  word-break: break-all;
+}
+.works__links-item + .works__links-item {
+  margin-top: 10px;
+}
+
+.works__info-item + .works__info-item {
+  margin-top: 20px;
+}
+
+.works-btn__wrapper {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.lg-on {
+  overflow-y: hidden;
+}
+
+/*end works*/
