@@ -7,6 +7,7 @@
 
 <body>
     @@include('html/header.html',{})
+    <!-- start main  -->
     <main class="main">
         <div class="wrapper">
             <div class="main__wrapper">
@@ -43,6 +44,37 @@
             </div>
         </div>
     </main>
+    <!-- end main  -->
+
+    <!-- start skills -->
+    <section class="skills">
+        <div class="wrapper">
+            <h2 class="title-medium">навыки</h2>
+        </div>
+        <div class="wrapper scroll">
+            <div class="scroll__wrapper skills__scroll">
+                <div class="img__wrapper skills__item">
+                    <img src="img/skills/html.svg" alt="html">
+                </div>
+                <div class="img__wrapper skills__item">
+                    <img src="img/skills/css.svg" alt="css">
+                </div>
+                <div class="img__wrapper skills__item">
+                    <img src="img/skills/js.svg" alt="js">
+                </div>
+                <div class="img__wrapper skills__item">
+                    <img src="img/skills/sass.svg" alt="scss">
+                </div>
+                <div class="img__wrapper skills__item">
+                    <img src="img/skills/gulp.svg" alt="gulp">
+                </div>
+                <div class="img__wrapper skills__item">
+                    <img src="img/skills/vs.svg" alt="vscode">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end skills -->
     @@include('html/footer.html',{})
 
     @@include('html/mobile-menu.html',{})
