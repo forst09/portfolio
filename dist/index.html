@@ -17,7 +17,29 @@
 <body>
     <header class="header">
     <div class="wrapper">
-        
+        <div class="header__wrapper">
+            <nav class="navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="" class="navigation__link">обо мне</a></li>
+                    <li class="navigation__item"><a href="" class="navigation__link">навыки</a></li>
+                    <li class="navigation__item"><a href="" class="navigation__link">работы</a></li>
+                    <li class="navigation__item"><a href="" class="navigation__link">контакты</a></li>
+                </ul>
+            </nav>
+            <div class="btn__wrapper header-btn__wrapper">
+                <a href="https://t.me/forst09" class="icon-link">
+                    <svg class="icon-link__svg">
+                        <use xlink:href="img/sprite.svg#tg"></use>
+                    </svg>
+                    <span class="icon-link__span">написать в tg</span>
+                </a>
+            </div>
+            <a href="javascript:void(0)" class="burger">
+                <svg class="burger__icon">
+                    <use xlink:href="img/sprite.svg#burger"></use>
+                </svg>
+            </a>
+        </div>
     </div>
 </header>
     <main class="main">
@@ -40,11 +62,12 @@
                         <li class="main__list-item">верстаю семантично, адаптивно и кроссбраузерно, mobile-first</li>
                         <li class="main__list-item">прохожу курс на udemy по js и 100 Days Css
                             Challenge.
-                            Челлендж по css выкладываю на <a href="img/main/certificate.jpg" class="link">codepen</a>
+                            Челлендж по css выкладываю на <a href="https://codepen.io/forst09" class="link"
+                                target="_blank">codepen</a>
                         </li>
                     </ul>
                     <div class="btn__wrapper main-btn__wrapper">
-                        <a href="" class="icon-link">
+                        <a href="https://t.me/forst09" class="icon-link">
                             <svg class="icon-link__svg">
                                 <use xlink:href="img/sprite.svg#tg"></use>
                             </svg>
@@ -56,6 +79,34 @@
         </div>
     </main>
     
+
+    <div class="mobile-menu">
+    <div class="mobile-menu__wrapper">
+        <div class="wrapper">
+            <a href="javascript:void(0)" class="burger burger--close">
+                <svg class="burger__icon">
+                    <use xlink:href="img/sprite.svg#close"></use>
+                </svg>
+            </a>
+            <nav class="mobile-menu__navigation">
+                <ul class="mobile-menu__list">
+                    <li class="mobile-menu__item"><a href="" class="mobile-menu__link">обо мне</a></li>
+                    <li class="mobile-menu__item"><a href="" class="mobile-menu__link">навыки</a></li>
+                    <li class="mobile-menu__item"><a href="" class="mobile-menu__link">работы</a></li>
+                    <li class="mobile-menu__item"><a href="" class="mobile-menu__link">контакты</a></li>
+                </ul>
+            </nav>
+            <div class="btn__wrapper mobile-menu-btn__wrapper">
+                <a href="https://t.me/forst09" class="icon-link">
+                    <svg class="icon-link__svg">
+                        <use xlink:href="img/sprite.svg#tg"></use>
+                    </svg>
+                    <span class="icon-link__span">написать в tg</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0/lightgallery.min.js"></script>
 

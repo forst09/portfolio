@@ -45,6 +45,94 @@ svg {
     text-transform: uppercase;
 }
 
+/*header*/
+.header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 15px 0;
+    z-index: 100;
+}
+
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation {
+    display: none;
+}
+
+.burger__icon {
+    width: 40px;
+    height: 40px;
+}
+
+/*end header*/
+
+/*mobile menu*/
+.mobile-menu {
+    position: fixed;
+    left: 0;
+    top: -100%;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--white);
+    z-index: 200;
+    opacity: 0;
+    transition: top 0.5s ease-in-out, opacity 0.3s ease-in-out;
+
+    &::after {
+        content: '';
+        position: absolute;
+        right: -18px;
+        top: 0;
+        display: block;
+        width: 200px;
+        height: 200px;
+        background-color: var(--red);
+        border-radius: 50%;
+        z-index: -1;
+        filter: blur(150px);
+    }
+}
+
+.mobile-menu__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.burger--close {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+}
+
+.mobile-menu__item {
+    text-align: center;
+
+    &+& {
+        margin-top: 40px;
+    }
+}
+
+.mobile-menu__link {
+    font-size: 15px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.mobile-menu-btn__wrapper {
+    margin-top: 40px;
+}
+
+/*end mobile menu*/
+
 /*end common*/
 
 /*main*/
