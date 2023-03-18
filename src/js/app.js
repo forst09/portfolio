@@ -31,6 +31,29 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
+    //anchor
+    const anchors = document.querySelectorAll('.nav-js');
+
+    anchors.forEach(item => {
+        item.addEventListener('click', function (e) {
+            e.preventDefault();
+            if (document.querySelector('.mobile-menu').classList.contains('active')) {
+                document.querySelector('.mobile-menu').classList.remove('active');
+                document.querySelector('body').classList.remove('not-scroll');
+            }
+            const id = item.getAttribute('href');
+            // document.querySelector(id).scrollIntoView({
+            //     behavior: "smooth",
+            //     block: 'start'
+            // })
+            // console.log(document.querySelector(id).getBoundingClientRect())
+            window.scrollTo({
+                behavior: 'smooth',
+                top: document.querySelector(id).getBoundingClientRect().top + window.pageYOffset - 100
+            })
+        })
+    });
+
     // const worksGallery = document.getElementById('works');
     // const certificateGallery = document.getElementById('certificate');
 
