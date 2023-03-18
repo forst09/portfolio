@@ -16,7 +16,7 @@
   \***********************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n\n\n//# sourceURL=webpack://designagency/./src/js/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\nlightGallery(document.getElementById('animated-thumbnails'));\r\n\n\n//# sourceURL=webpack://designagency/./src/js/app.js?");
 
 /***/ })
 
