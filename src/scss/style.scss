@@ -45,6 +45,10 @@ svg {
     text-transform: uppercase;
 }
 
+.not-scroll {
+    overflow-y: hidden;
+}
+
 /*header*/
 .header {
     position: absolute;
@@ -76,13 +80,13 @@ svg {
 .mobile-menu {
     position: fixed;
     left: 0;
-    top: -100%;
+    top: -100vh;
     width: 100vw;
     height: 100vh;
     background-color: var(--white);
     z-index: 200;
     opacity: 0;
-    transition: top 0.5s ease-in-out, opacity 0.3s ease-in-out;
+    transition: top 0.7s ease-in-out, opacity 0.3s ease-in-out;
 
     &::after {
         content: '';
@@ -97,6 +101,11 @@ svg {
         z-index: -1;
         filter: blur(150px);
     }
+}
+
+.mobile-menu.active {
+    top: 0;
+    opacity: 1;
 }
 
 .mobile-menu__wrapper {
