@@ -89,8 +89,28 @@ svg {
   width: 100%;
   padding: 15px 0;
   z-index: 100;
+  opacity: 1;
+  transition: opacity 0.4s ease-in-out;
 }
 
+.header.fixed {
+  position: fixed;
+  top: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  opacity: 1;
+  border-radius: 50px;
+  backdrop-filter: blur(5px);
+  animation: headerFixed 0.5s ease-in-out;
+}
+
+@keyframes headerFixed {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .header__wrapper {
   display: flex;
   align-items: center;

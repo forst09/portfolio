@@ -20,7 +20,16 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     };
 
-
+    //fixed header
+    document.onscroll = function () {
+        let scroll = window.scrollY;
+        if (scroll > 400) {
+            document.querySelector('.header').classList.add('fixed');
+        }
+        else {
+            document.querySelector('.header').classList.remove('fixed');
+        }
+    }
 
     // const worksGallery = document.getElementById('works');
     // const certificateGallery = document.getElementById('certificate');
