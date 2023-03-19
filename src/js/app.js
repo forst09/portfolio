@@ -42,14 +42,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 document.querySelector('body').classList.remove('not-scroll');
             }
             const id = item.getAttribute('href');
-            // document.querySelector(id).scrollIntoView({
-            //     behavior: "smooth",
-            //     block: 'start'
-            // })
-            // console.log(document.querySelector(id).getBoundingClientRect())
+            const headerHeight = document.querySelector('.header').clientHeight;
             window.scrollTo({
                 behavior: 'smooth',
-                top: document.querySelector(id).getBoundingClientRect().top + window.pageYOffset - 100
+                top: document.querySelector(id).getBoundingClientRect().top + window.pageYOffset - headerHeight - 50
             })
         })
     });
