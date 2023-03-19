@@ -33,7 +33,11 @@ svg {
 }
 
 .icon-link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .icon-link:hover .icon-link__svg {
@@ -43,9 +47,12 @@ svg {
 .icon-link__svg {
   width: 40px;
   height: 40px;
+  -o-object-fit: cover;
   object-fit: cover;
   margin-right: 15px;
   fill: var(--black);
+  -webkit-transition: fill 0.3s ease-in-out;
+  -o-transition: fill 0.3s ease-in-out;
   transition: fill 0.3s ease-in-out;
 }
 
@@ -60,13 +67,20 @@ svg {
 }
 
 .img__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 .img__wrapper img {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 
@@ -80,6 +94,8 @@ svg {
 }
 
 .scroll__wrapper {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
@@ -96,6 +112,8 @@ svg {
   padding: 15px 0;
   z-index: 100;
   opacity: 1;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  -o-transition: opacity 0.4s ease-in-out;
   transition: opacity 0.4s ease-in-out;
 }
 
@@ -105,10 +123,20 @@ svg {
   background-color: rgba(255, 255, 255, 0.8);
   opacity: 1;
   border-radius: 50px;
+  -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
+  -webkit-animation: headerFixed 0.5s ease-in-out;
   animation: headerFixed 0.5s ease-in-out;
 }
 
+@-webkit-keyframes headerFixed {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 @keyframes headerFixed {
   from {
     opacity: 0;
@@ -118,8 +146,14 @@ svg {
   }
 }
 .header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -143,6 +177,8 @@ svg {
   background-color: var(--white);
   z-index: 200;
   opacity: 0;
+  -webkit-transition: top 0.7s ease-in-out, opacity 0.3s ease-in-out;
+  -o-transition: top 0.7s ease-in-out, opacity 0.3s ease-in-out;
   transition: top 0.7s ease-in-out, opacity 0.3s ease-in-out;
 }
 .mobile-menu::after {
@@ -156,6 +192,7 @@ svg {
   background-color: var(--red);
   border-radius: 50%;
   z-index: -1;
+  -webkit-filter: blur(150px);
   filter: blur(150px);
 }
 
@@ -165,8 +202,14 @@ svg {
 }
 
 .mobile-menu__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   height: 100%;
   width: 100%;
@@ -203,8 +246,15 @@ svg {
 }
 
 .footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   gap: 25px;
 }
@@ -228,22 +278,32 @@ svg {
   border-radius: 50%;
   background-color: var(--red);
   z-index: -1;
+  -webkit-filter: blur(250px);
   filter: blur(250px);
 }
 
 .main__photo {
   width: 128px;
   height: 128px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   overflow: hidden;
   border-radius: 50%;
+  -webkit-filter: grayscale(1);
   filter: grayscale(1);
   margin: 0 auto;
 }
 .main__photo img {
   width: 100%;
+  -webkit-transform: translateY(21px);
+  -ms-transform: translateY(21px);
   transform: translateY(21px);
 }
 
@@ -299,10 +359,16 @@ svg {
   position: relative;
   width: 110px;
   height: 110px;
+  -webkit-filter: grayscale(1);
   filter: grayscale(1);
+  -webkit-transition: -webkit-filter 0.3s ease-in-out;
+  transition: -webkit-filter 0.3s ease-in-out;
+  -o-transition: filter 0.3s ease-in-out;
   transition: filter 0.3s ease-in-out;
+  transition: filter 0.3s ease-in-out, -webkit-filter 0.3s ease-in-out;
 }
 .skills__item:hover {
+  -webkit-filter: grayscale(0);
   filter: grayscale(0);
 }
 

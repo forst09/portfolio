@@ -14,13 +14,19 @@
     display: block;
   }
   .navigation__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     gap: 20px;
   }
   .navigation__link {
     font-size: 16px;
     text-transform: uppercase;
+    -webkit-transition: color 0.3s ease-in-out;
+    -o-transition: color 0.3s ease-in-out;
     transition: color 0.3s ease-in-out;
   }
   .navigation__link:hover {
@@ -39,9 +45,18 @@
   /*main*/
   .main__wrapper {
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
   .main__info {
@@ -51,11 +66,14 @@
   /*works*/
   .works__item {
     max-width: unset;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 20px;
   }
   .works__img {
     max-width: 47%;
+    -ms-flex-negative: 0;
     flex-shrink: 0;
   }
   .works__info {
@@ -92,6 +110,8 @@
   .header.fixed {
     max-width: 1350px;
     left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
   }
   .header.fixed .header__wrapper.wrapper {
@@ -110,7 +130,12 @@
     padding-bottom: 80px;
   }
   .footer__wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     gap: 90px;
   }
@@ -120,10 +145,21 @@
   .main {
     padding-top: 160px;
   }
+  .main::after {
+    right: 2%;
+    top: 1.3%;
+  }
   .main__wrapper {
     margin: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     max-width: 1121px;
   }
@@ -147,6 +183,7 @@
   }
   .main__info {
     max-width: unset;
+    -ms-flex-preferred-size: 75%;
     flex-basis: 75%;
   }
   /*end main*/
@@ -184,6 +221,7 @@
     padding: 0 193px;
   }
   .header.fixed {
+    -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
   }
 }
