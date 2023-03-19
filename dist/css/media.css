@@ -155,6 +155,9 @@
     width: 201px;
     height: 201px;
   }
+  .skills__scroll {
+    gap: unset;
+  }
   /*end skills*/
   /*works*/
   .works__img {

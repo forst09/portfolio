@@ -80,6 +80,15 @@ document.addEventListener('DOMContentLoaded', function () {
         selector: '.works__img',
         showZoomInOutIcons: true
     });
+
+    //swiper skills
+    if (window.innerWidth >= 1024) {
+        const swiperSkills = new Swiper('.swiper-skills', {
+            slidesPerView: 'auto',
+            spaceBetween: 40,
+            grabCursor: true
+        })
+    }
 });
 
 

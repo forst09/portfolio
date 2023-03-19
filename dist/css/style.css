@@ -83,6 +83,10 @@ svg {
   display: inline-flex;
 }
 
+.swiper-slide {
+  width: auto;
+}
+
 /*header*/
 .header {
   position: absolute;
