@@ -97,6 +97,7 @@ svg {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  gap: 40px;
 }
 
 .swiper-slide {
@@ -347,6 +348,21 @@ svg {
 
 /*end main*/
 /*start skills*/
+.ticker {
+  display: flex;
+}
+.ticker__item {
+  animation: ticker infinite 30s linear reverse;
+}
+
+@keyframes ticker {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 .title-medium {
   margin-bottom: 40px;
   font-size: 19px;
@@ -379,7 +395,6 @@ svg {
 /*end skills*/
 /*start works*/
 .works__item {
-  max-width: 300px;
   margin: 0 auto;
 }
 .works__item + .works__item {
@@ -435,3 +450,58 @@ svg {
 }
 
 /*end works*/
+.tg-circle {
+  position: fixed;
+  right: 20px;
+  bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: -moz-fit-content;
+  height: fit-content;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(5px);
+}
+@media (hover: hover) {
+  .tg-circle:hover::after {
+    background-color: var(--red);
+  }
+}
+.tg-circle::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  mask-image: url("../img/icons/circle-tg.svg");
+  mask-repeat: no-repeat;
+  mask-size: cover;
+  mask-position: center;
+  background-color: var(--black);
+  animation: circle-text linear infinite 8s;
+}
+.tg-circle::after {
+  content: "";
+  position: absolute;
+  width: 27%;
+  height: auto;
+  aspect-ratio: 1;
+  mask-image: url("../img/icons/tg.svg");
+  mask-repeat: no-repeat;
+  mask-size: cover;
+  mask-position: center;
+  background-color: var(--black);
+  transition: background-color 0.3s ease;
+}
+
+@keyframes circle-text {
+  0% {
+    transform: rotate(-360deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}

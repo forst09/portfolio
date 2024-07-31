@@ -3,16 +3,26 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="Портфолио html-верстальщика" />
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/fonts.css">
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <meta property="og:title"
+        content="Портфолио html-верстальщика" />
+    <link rel="stylesheet"
+        href="css/reset.css">
+    <link rel="stylesheet"
+        href="css/fonts.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lightgallery-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet"
+        href="css/style.css">
+    <link rel="stylesheet"
+        href="css/media.css">
     <title>Портфолио</title>
 </head>
 
@@ -22,21 +32,29 @@
         <div class="header__container">
             <nav class="navigation">
                 <ul class="navigation__list">
-                    <li class="navigation__item"><a href="#about" class="navigation__link nav-js">обо мне</a></li>
-                    <li class="navigation__item"><a href="#skills" class="navigation__link nav-js">навыки</a></li>
-                    <li class="navigation__item"><a href="#works" class="navigation__link nav-js">работы</a></li>
-                    <li class="navigation__item"><a href="#contacts" class="navigation__link nav-js">контакты</a></li>
+                    <li class="navigation__item"><a href="#about"
+                            class="navigation__link nav-js">обо мне</a></li>
+                    <li class="navigation__item"><a href="#skills"
+                            class="navigation__link nav-js">навыки</a></li>
+                    <li class="navigation__item"><a href="#works"
+                            class="navigation__link nav-js">работы</a></li>
+                    <li class="navigation__item"><a href="#contacts"
+                            class="navigation__link nav-js">контакты</a></li>
                 </ul>
             </nav>
             <div class="btn__wrapper header-btn__wrapper">
-                <a href="https://t.me/forst09" class="icon-link">
+                <a href="https://t.me/forst09"
+                    class="icon-link"
+                    target="_blank">
                     <svg class="icon-link__svg">
                         <use xlink:href="img/sprite.svg#tg"></use>
                     </svg>
                     <span class="icon-link__span">написать в tg</span>
                 </a>
             </div>
-            <a id="burger" href="javascript:void(0)" class="burger">
+            <a id="burger"
+                href="javascript:void(0)"
+                class="burger">
                 <svg class="burger__icon">
                     <use xlink:href="img/sprite.svg#burger"></use>
                 </svg>
@@ -45,32 +63,44 @@
     </div>
 </header>
     <!-- start main  -->
-    <main id="about" class="main">
+    <main id="about"
+        class="main">
         <div class="wrapper">
             <div class="main__wrapper">
                 <div class="main__photo">
-                    <img src="img/main/main.jpg" alt="фото">
+                    <img src="img/main/main.jpg"
+                        alt="фото">
                 </div>
                 <div class="main__info">
-                    <h1 class="title">я Дарья, ищу работу html-верстальщицей</h1>
+                    <h1 class="title">я Дарья, ищу работу frontend-разработчицей</h1>
                     <ul class="main__list">
-                        <li class="main__list-item">закончила Нижегородский автомеханический техникум по специальности
-                            “Программирование в компьютерных системах”</li>
-                        <li class="main__list-item" id="animated-thumbnails">прошла курс по основам frontend-разработки.
-                            <a href="img/main/certificate.jpg" class="link">Сертификат</a>
+                        <li class="main__list-item">в настоящий момент работаю в веб-студии <a class="link"
+                                href="https://webshop.ru/"
+                                target="_blank">WEBSHOP</a> junior frontend-разработчицей
                         </li>
-                        <li class="main__list-item">с мая 2022 по ноябрь 2022 работала в диджитал-агентстве
-                            html-верстальщицей. Верстала под Битрикс, имею опыт работы в команде и опыт коммерческой
-                            разработки</li>
-                        <li class="main__list-item">верстаю семантично, адаптивно и кроссбраузерно, mobile-first</li>
-                        <li class="main__list-item">прохожу курс на udemy по js и 100 Days Css
-                            Challenge.
-                            Челлендж по css выкладываю на <a href="https://codepen.io/forst09" class="link"
-                                target="_blank">codepen</a>
+                        <li class="main__list-item">работала в диджитал-агентстве <a class="link"
+                                href="https://upfly.ru/"
+                                target="_blank">UpFly</a> html-верстальщицей
+                        </li>
+                        <li class="main__list-item">закончила курс <a
+                                href="https://www.udemy.com/course/vuejs-2-the-complete-guide"
+                                class="link"
+                                target="_blank"> Vue - The Complete Guide (incl. Router & Composition API)</a>. <a
+                                href="img/main/certificate.jpg"
+                                class="link"
+                                data-fancybox>Сертификат</a></li>
+                        <li class="main__list-item">верстаю семантично, адаптивно и кроссбраузерно. Могу и в
+                            mobile-first, и в desctop-first</li>
+                        <li class="main__list-item">пишу о своем фронтердеском обучении в <a
+                                href="https://t.me/dariafront"
+                                class="link"
+                                target="_blank">тг-канале</a>
                         </li>
                     </ul>
                     <div class="btn__wrapper main-btn__wrapper">
-                        <a href="https://t.me/forst09" class="icon-link">
+                        <a href="https://t.me/forst09"
+                            target="_blank"
+                            class="icon-link">
                             <svg class="icon-link__svg">
                                 <use xlink:href="img/sprite.svg#tg"></use>
                             </svg>
@@ -84,40 +114,121 @@
     <!-- end main  -->
 
     <!-- start skills -->
-    <section id="skills" class="skills">
+    <section id="skills"
+        class="skills">
         <div class="wrapper">
             <h2 class="title-medium">навыки</h2>
         </div>
-        <div class="wrapper scroll swiper-skills">
-            <div class="scroll__wrapper skills__scroll swiper-wrapper">
+        <div class="scroll ticker">
+            <div class="scroll__wrapper ticker__item">
                 <div class="swiper-slide">
                     <div class="img__wrapper skills__item">
-                        <img src="img/skills/html.svg" alt="html">
+                        <img src="img/skills/html.svg"
+                            alt="html">
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="img__wrapper skills__item">
-                        <img src="img/skills/css.svg" alt="css">
+                        <img src="img/skills/css.svg"
+                            alt="css">
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="img__wrapper skills__item">
-                        <img src="img/skills/js.svg" alt="js">
+                        <img src="img/skills/js.svg"
+                            alt="js">
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="img__wrapper skills__item">
-                        <img src="img/skills/sass.svg" alt="scss">
+                        <img src="img/skills/vue.svg"
+                            alt="html">
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="img__wrapper skills__item">
-                        <img src="img/skills/gulp.svg" alt="gulp">
+                        <img src="img/skills/vite.svg"
+                            alt="html">
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="img__wrapper skills__item">
-                        <img src="img/skills/vs.svg" alt="vscode">
+                        <img src="img/skills/git.svg"
+                            alt="html">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="img__wrapper skills__item">
+                        <img src="img/skills/gsap.svg"
+                            alt="html">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="img__wrapper skills__item">
+                        <img src="img/skills/sass.svg"
+                            alt="scss">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="img__wrapper skills__item">
+                        <img src="img/skills/vs.svg"
+                            alt="vscode">
+                    </div>
+                </div>
+            </div>
+            <div class="scroll__wrapper ticker__item">
+                <div class="swiper-slide">
+                    <div class="img__wrapper skills__item">
+                        <img src="img/skills/html.svg"
+                            alt="html">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="img__wrapper skills__item">
+                        <img src="img/skills/css.svg"
+                            alt="css">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="img__wrapper skills__item">
+                        <img src="img/skills/js.svg"
+                            alt="js">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="img__wrapper skills__item">
+                        <img src="img/skills/vue.svg"
+                            alt="html">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="img__wrapper skills__item">
+                        <img src="img/skills/vite.svg"
+                            alt="html">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="img__wrapper skills__item">
+                        <img src="img/skills/git.svg"
+                            alt="html">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="img__wrapper skills__item">
+                        <img src="img/skills/gsap.svg"
+                            alt="html">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="img__wrapper skills__item">
+                        <img src="img/skills/sass.svg"
+                            alt="scss">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="img__wrapper skills__item">
+                        <img src="img/skills/vs.svg"
+                            alt="vscode">
                     </div>
                 </div>
             </div>
@@ -126,25 +237,80 @@
     <!-- end skills -->
 
     <!-- start works -->
-    <section id="works" class="works">
+    <section id="works"
+        class="works">
         <div class="wrapper">
             <h2 class="title-medium">работы</h2>
+
             <div class="works__item">
-                <a href="img/works/forst09.github.io_gb_dist_index.html.png" class="works__img">
-                    <img src="img/works/forst09.github.io_gb_dist_index.html.png" alt="https://getbeer.ru/">
+                <a href="img/works/glasses.jpg"
+                    class="works__img">
+                    <img src="img/works/glasses.jpg"
+                        alt="https://www.solnyshco.com/glasses">
+                </a>
+                <div class="works__info">
+                    <div class="works__info-item">
+                        <h3 class="works__title">Про сайт</h3>
+                        <p class="works__text">Промо-лендинг о защитных очках. С этого проекта начала пользоваться vite
+                            вместо gulp</p>
+                        <div class="works__links">
+                            <a href="https://www.solnyshco.com/glasses"
+                                class="works__links-item"
+                                target="_blank">https://www.solnyshco.com/glasses</a>
+                        </div>
+                    </div>
+                    <div class="works__info-item">
+                        <h3 class="works__title">Технологии</h3>
+                        <p class="works__text">html5, css3, scss, js, flex, grid, swiper.js, vite,
+                            fancybox, gsap-анимации</p>
+                    </div>
+                </div>
+            </div>
+            <div class="works__item">
+                <a href="img/works/ag-tkani.ru.jpg"
+                    class="works__img">
+                    <img src="img/works/ag-tkani.ru.jpg"
+                        alt="https://ag-tkani.ru/">
+                </a>
+                <div class="works__info">
+                    <div class="works__info-item">
+                        <h3 class="works__title">Про сайт</h3>
+                        <p class="works__text">Сайт-каталог для поставщика тканей. С этого проекта начала делать
+                            анимации с помощью библиотеки gsap</p>
+                        <div class="works__links">
+                            <a href="https://ag-tkani.ru/"
+                                class="works__links-item"
+                                target="_blank">https://ag-tkani.ru/</a>
+                        </div>
+                    </div>
+                    <div class="works__info-item">
+                        <h3 class="works__title">Технологии</h3>
+                        <p class="works__text">html5, css3, scss, js, flex, grid, swiper.js, gulp, Яндекс.Карты,
+                            fancybox, gsap-анимации</p>
+                    </div>
+                </div>
+            </div>
+            <div class="works__item">
+                <a href="img/works/forst09.github.io_gb_dist_index.html.png"
+                    class="works__img">
+                    <img src="img/works/forst09.github.io_gb_dist_index.html.png"
+                        alt="https://getbeer.ru/">
                 </a>
                 <div class="works__info">
                     <div class="works__info-item">
                         <h3 class="works__title">Про сайт</h3>
                         <p class="works__text">Многостраничник маркетплейса с пивом и закусками. На самом сайте
                             мало что выложено, лучше потыкаться в моем гитхаб-репозитории. В файле <a
-                                href="https://github.com/forst09/gb/blob/main/README.md" class="link"
+                                href="https://github.com/forst09/gb/blob/main/README.md"
+                                class="link"
                                 target="_blank">readme.md</a> указаны
                             ссылки на все страницы с кратким описанием</p>
                         <div class="works__links">
-                            <a href="https://getbeer.ru/" class="works__links-item"
+                            <a href="https://getbeer.ru/"
+                                class="works__links-item"
                                 target="_blank">https://getbeer.ru/</a>
-                            <a href="https://forst09.github.io/gb/dist/index.html" class="works__links-item"
+                            <a href="https://forst09.github.io/gb/dist/index.html"
+                                class="works__links-item"
                                 target="_blank">https://forst09.github.io/gb/dist/index.html</a>
                         </div>
                     </div>
@@ -154,7 +320,9 @@
                             fancybox, svg sprite, svg-анимации</p>
                     </div>
                     <div class="btn__wrapper works-btn__wrapper">
-                        <a href="https://github.com/forst09/gb" class="icon-link" target="_blank">
+                        <a href="https://github.com/forst09/gb"
+                            class="icon-link"
+                            target="_blank">
                             <svg class="icon-link__svg">
                                 <use xlink:href="img/sprite.svg#github"></use>
                             </svg>
@@ -164,49 +332,20 @@
                 </div>
             </div>
             <div class="works__item">
-                <a href="img/works/elmedlife.ru_.png" class="works__img">
-                    <img src="img/works/elmedlife.ru_.png" alt="https://elmedlife.ru/">
+                <a href="img/works/268.brain-storm.ru_.png"
+                    class="works__img">
+                    <img src="img/works/268.brain-storm.ru_.png"
+                        alt="http://268.brain-storm.ru/">
                 </a>
-                <div class="works__info">
-                    <div class="works__info-item">
-                        <h3 class="works__title">Про сайт</h3>
-                        <p class="works__text">Лендинг для клиники с записью на сеансы с их лечащим аппаратом</p>
-                        <div class="works__links">
-                            <a href="https://elmedlife.ru/" class="works__links-item"
-                                target="_blank">https://elmedlife.ru/</a>
-                        </div>
-                    </div>
-                    <div class="works__info-item">
-                        <h3 class="works__title">Технологии</h3>
-                        <p class="works__text">html5, css3, scss, jquery, js, flex, swiper.js, gulp, Яндекс.Карты,
-                            fancybox, svg sprite</p>
-                    </div>
-                    <div class="btn__wrapper works-btn__wrapper">
-                        <a href="https://github.com/forst09/elmed-correct" class="icon-link" target="_blank">
-                            <svg class="icon-link__svg">
-                                <use xlink:href="img/sprite.svg#github"></use>
-                            </svg>
-                            <span class="icon-link__span">посмотреть код</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="works__item">
-                <a href="img/works/268.brain-storm.ru_.png" class="works__img">
-                    <img src="img/works/268.brain-storm.ru_.png" alt="http://268.brain-storm.ru/">
-                </a>
-                <!-- <a href="img/works/forst09.github.io_rusauto_dist_index.html.png" class="works__img">
-                    <img src="img/works/forst09.github.io_rusauto_dist_index.html.png"
-                        alt="https://forst09.github.io/rusauto/dist/index.html">
-                </a> -->
                 <div class="works__info">
                     <div class="works__info-item">
                         <h3 class="works__title">Про сайт</h3>
                         <p class="works__text">Интернет-магазин по продаже автозапчастей. Верстала в паре с коллегой.
                             Пока что самый большой сайт из всех, что я делала</p>
                         <div class="works__links">
-                            <a href="http://268.brain-storm.ru/" class="works__links-item"
-                                target="_blank">http://268.brain-storm.ru/</a>
+                            <a href="https://rad52.ru/"
+                                class="works__links-item"
+                                target="_blank">https://rad52.ru/</a>
                             <!-- <a href="https://forst09.github.io/rusauto/dist/index.html" class="works__links-item"
                                 target="_blank">https://forst09.github.io/rusauto/dist/index.html</a> -->
                         </div>
@@ -217,7 +356,9 @@
                             fancybox</p>
                     </div>
                     <div class="btn__wrapper works-btn__wrapper">
-                        <a href="https://github.com/forst09/rusauto" class="icon-link" target="_blank">
+                        <a href="https://github.com/forst09/rusauto"
+                            class="icon-link"
+                            target="_blank">
                             <svg class="icon-link__svg">
                                 <use xlink:href="img/sprite.svg#github"></use>
                             </svg>
@@ -227,15 +368,18 @@
                 </div>
             </div>
             <div class="works__item">
-                <a href="img/works/plusresidence.ru_.png" class="works__img">
-                    <img src="img/works/plusresidence.ru_.png" alt="https://plusresidence.ru/">
+                <a href="img/works/plusresidence.ru_.png"
+                    class="works__img">
+                    <img src="img/works/plusresidence.ru_.png"
+                        alt="https://plusresidence.ru/">
                 </a>
                 <div class="works__info">
                     <div class="works__info-item">
                         <h3 class="works__title">Про сайт</h3>
                         <p class="works__text">Лендинг для сети отелей Azimut</p>
                         <div class="works__links">
-                            <a href="https://plusresidence.ru/" class="works__links-item"
+                            <a href="https://plusresidence.ru/"
+                                class="works__links-item"
                                 target="_blank">https://plusresidence.ru/</a>
                         </div>
                     </div>
@@ -245,7 +389,9 @@
                             fancybox</p>
                     </div>
                     <div class="btn__wrapper works-btn__wrapper">
-                        <a href="https://github.com/forst09/azimut" class="icon-link" target="_blank">
+                        <a href="https://github.com/forst09/azimut"
+                            class="icon-link"
+                            target="_blank">
                             <svg class="icon-link__svg">
                                 <use xlink:href="img/sprite.svg#github"></use>
                             </svg>
@@ -255,16 +401,19 @@
                 </div>
             </div>
             <div class="works__item">
-                <a href="img/works/promgran.ru_.png" class="works__img">
-                    <img src="img/works/promgran.ru_.png" alt="https://promgran.ru/">
+                <a href="img/works/promgran.ru_.png"
+                    class="works__img">
+                    <img src="img/works/promgran.ru_.png"
+                        alt="https://promgran.ru/">
                 </a>
                 <div class="works__info">
                     <div class="works__info-item">
                         <h3 class="works__title">Про сайт</h3>
-                        <p class="works__text">Мой первый сайт на первой работе. Многостраничник по продаже линий
+                        <p class="works__text">Мой первый коммерческий проект. Многостраничник о производстве линий
                             гранулирования </p>
                         <div class="works__links">
-                            <a href="https://promgran.ru/" class="works__links-item"
+                            <a href="https://promgran.ru/"
+                                class="works__links-item"
                                 target="_blank">https://promgran.ru/</a>
                         </div>
                     </div>
@@ -273,93 +422,9 @@
                         <p class="works__text">html5, css3, scss, jquery, js, flex, grid, swiper.js, gulp</p>
                     </div>
                     <div class="btn__wrapper works-btn__wrapper">
-                        <a href="https://github.com/forst09/promgran" class="icon-link" target="_blank">
-                            <svg class="icon-link__svg">
-                                <use xlink:href="img/sprite.svg#github"></use>
-                            </svg>
-                            <span class="icon-link__span">посмотреть код</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="works__item">
-                <a href="img/works/forst09.github.io_racebeaty_.png" class="works__img">
-                    <img src="img/works/forst09.github.io_racebeaty_.png" alt="https://forst09.github.io/racebeaty/">
-                </a>
-                <div class="works__info">
-                    <div class="works__info-item">
-                        <h3 class="works__title">Про сайт</h3>
-                        <p class="works__text">Главная страница моей дипломной работы с техникума</p>
-                        <div class="works__links">
-                            <a href="https://forst09.github.io/racebeaty/" class="works__links-item"
-                                target="_blank">https://forst09.github.io/racebeaty/</a>
-                        </div>
-                    </div>
-                    <div class="works__info-item">
-                        <h3 class="works__title">Технологии</h3>
-                        <p class="works__text">html5, css3, flex, bootstrap, swiper.js</p>
-                    </div>
-                    <div class="btn__wrapper works-btn__wrapper">
-                        <a href="https://github.com/forst09/racebeaty" class="icon-link" target="_blank">
-                            <svg class="icon-link__svg">
-                                <use xlink:href="img/sprite.svg#github"></use>
-                            </svg>
-                            <span class="icon-link__span">посмотреть код</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="works__item">
-                <a href="img/works/forst09.github.io_DesignAgency_.png" class="works__img">
-                    <img src="img/works/forst09.github.io_DesignAgency_.png"
-                        alt="https://forst09.github.io/DesignAgency/">
-                </a>
-                <div class="works__info">
-                    <div class="works__info-item">
-                        <h3 class="works__title">Про сайт</h3>
-                        <p class="works__text">Один из первых лендингов, сделанных самостоятельно</p>
-                        <div class="works__links">
-                            <a href="https://forst09.github.io/DesignAgency/" class="works__links-item"
-                                target="_blank">https://forst09.github.io/DesignAgency/</a>
-                        </div>
-                    </div>
-                    <div class="works__info-item">
-                        <h3 class="works__title">Технологии</h3>
-                        <p class="works__text">html5, css3, scss, flex, gulp</p>
-                    </div>
-                    <div class="btn__wrapper works-btn__wrapper">
-                        <a href="https://github.com/forst09/DesignAgency" class="icon-link" target="_blank">
-                            <svg class="icon-link__svg">
-                                <use xlink:href="img/sprite.svg#github"></use>
-                            </svg>
-                            <span class="icon-link__span">посмотреть код</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="works__item">
-                <a href="img/works/forst09.github.io_cv_.png" class="works__img">
-                    <img src="img/works/forst09.github.io_cv_.png" alt="https://forst09.github.io/cv/">
-                </a>
-                <div class="works__info">
-                    <div class="works__info-item">
-                        <h3 class="works__title">Про сайт</h3>
-                        <p class="works__text">Верстка cv-карточки</p>
-                        <div class="works__links">
-                            <a href="https://forst09.github.io/cv/" class="works__links-item"
-                                target="_blank">https://forst09.github.io/cv/</a>
-                        </div>
-                    </div>
-                    <div class="works__info-item">
-                        <h3 class="works__title">Технологии</h3>
-                        <p class="works__text">html5, css3, flex</p>
-                    </div>
-                    <div class="btn__wrapper works-btn__wrapper">
-                        <a href="https://github.com/forst09/cv" class="icon-link" target="_blank">
+                        <a href="https://github.com/forst09/promgran"
+                            class="icon-link"
+                            target="_blank">
                             <svg class="icon-link__svg">
                                 <use xlink:href="img/sprite.svg#github"></use>
                             </svg>
@@ -371,22 +436,33 @@
         </div>
     </section>
     <!-- end works -->
-    <footer id="contacts" class="footer">
+
+    <a href="https://t.me/dariafront"
+        target="_blank"
+        class="tg-circle"></a>
+
+    <footer id="contacts"
+    class="footer">
     <div class="wrapper">
         <div class="footer__wrapper">
-            <a href="https://github.com/forst09" class="icon-link" target="_blank">
+            <a href="https://t.me/forst09"
+                class="icon-link"
+                target="_blank">
                 <svg class="icon-link__svg">
                     <use xlink:href="img/sprite.svg#tg"></use>
                 </svg>
                 <span class="icon-link__span">телеграм</span>
             </a>
-            <a href="https://t.me/forst09" class="icon-link">
+            <a href="https://github.com/forst09"
+                class="icon-link"
+                target="_blank">
                 <svg class="icon-link__svg">
                     <use xlink:href="img/sprite.svg#github"></use>
                 </svg>
                 <span class="icon-link__span">гитхаб</span>
             </a>
-            <a href="tel:+79042069047" class="icon-link">
+            <a href="tel:+79042069047"
+                class="icon-link">
                 <svg class="icon-link__svg">
                     <use xlink:href="img/sprite.svg#phone"></use>
                 </svg>
@@ -424,6 +500,7 @@
     </div>
 </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/lightgallery.umd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/zoom/lg-zoom.umd.min.js"></script>

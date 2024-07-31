@@ -50,29 +50,13 @@ document.addEventListener('DOMContentLoaded', function () {
         })
     });
 
-    // const worksGallery = document.getElementById('works');
-    // const certificateGallery = document.getElementById('certificate');
-
-    // worksGallery.addEventListener('lgBeforeOpen', function () {
-    //     document.querySelector('body').classList.add('not-scroll');
-    // });
-    // worksGallery.addEventListener('lgBeforeClose', function () {
-    //     document.querySelector('body').classList.remove('not-scroll');
-    // });
-
-    // function closeM(gallery) {
-    //     const worksGallery = document.getElementById(gallery);
-    //     worksGallery.addEventListener('lgBeforeOpen', function () {
-    //         document.querySelector('body').classList.add('not-scroll');
-    //     });
-    //     worksGallery.addEventListener('lgBeforeClose', function () {
-    //         document.querySelector('body').classList.remove('not-scroll');
-    //     });
-    // }
-    // closeM('works');
-
     //open certificate
-    lightGallery(document.getElementById('animated-thumbnails'));
+    // lightGallery(document.getElementById('vue-certificate', {
+    //     selector: '.link',
+    // }));
+    Fancybox.bind("[data-fancybox]", {
+        // Your custom options
+    });
 
     //open works
     lightGallery(document.getElementById('works'), {
@@ -82,13 +66,21 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     //swiper skills
-    if (window.innerWidth >= 1024) {
-        const swiperSkills = new Swiper('.swiper-skills', {
-            slidesPerView: 'auto',
-            spaceBetween: 40,
-            grabCursor: true
-        })
-    }
+    // if (window.innerWidth >= 1024) {
+    //     const swiperSkills = new Swiper('.swiper-skills', {
+    //         slidesPerView: 'auto',
+    //         spaceBetween: 40,
+    //         // grabCursor: true
+    //         loop: true,
+    //         centeredSlides: true,
+    //         speed: 6000,
+    //         autoplay: {
+    //             delay: 0.1,
+    //         },
+    //         allowTouchMove: false,
+    //         disableOnInteraction: true
+    //     })
+    // }
 });
 
 

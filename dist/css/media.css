@@ -1,4 +1,8 @@
 @media (min-width: 768px) {
+  .tg-circle {
+    right: 50px;
+    width: 150px;
+  }
   /*common*/
   .wrapper {
     padding: 0 40px;
@@ -191,9 +195,6 @@
   .skills__item {
     width: 201px;
     height: 201px;
-  }
-  .skills__scroll {
-    gap: unset;
   }
   /*end skills*/
   /*works*/
