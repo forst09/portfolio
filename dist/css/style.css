@@ -311,6 +311,7 @@ svg {
   display: flex;
 }
 .ticker__item {
+  padding: 0 20px;
   animation: ticker infinite 30s linear reverse;
 }
 
