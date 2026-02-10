@@ -2,7 +2,7 @@
 :root {
   --white: #ffffff;
   --black: #000000;
-  --red: #C55353;
+  --red: #c55353;
 }
 
 html {
@@ -258,13 +258,12 @@ svg {
   justify-content: center;
   overflow: hidden;
   border-radius: 50%;
-  -webkit-filter: grayscale(1);
-  filter: grayscale(1);
   margin: 0 auto;
 }
 .main__photo img {
   width: 100%;
-  transform: translateY(21px);
+  height: 100%;
+  object-fit: cover;
 }
 
 .title {
@@ -476,7 +475,7 @@ svg {
 
 @-webkit-keyframes circle-text {
   0% {
-    transform: rotate(-360deg);
+    transform: rotate(360deg);
   }
   100% {
     transform: rotate(0);
@@ -484,7 +483,7 @@ svg {
 }
 @keyframes circle-text {
   0% {
-    transform: rotate(-360deg);
+    transform: rotate(360deg);
   }
   100% {
     transform: rotate(0);
